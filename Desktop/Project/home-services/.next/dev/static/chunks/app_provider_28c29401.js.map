@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/niles/Desktop/Project/home-services/app/provider.js"],"sourcesContent":["'use client';\r\n\r\nimport { SessionProvider } from 'next-auth/react';\r\n\r\nexport default function NextAuthSessionProvider({ children }) {\r\n  return (\r\n    <SessionProvider>\r\n      {children}\r\n    </SessionProvider>\r\n  );\r\n}"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS,wBAAwB,EAAE,QAAQ,EAAE;IAC1D,qBACE,6LAAC,oKAAe;kBACb;;;;;;AAGP;KANwB"}}]
+}
