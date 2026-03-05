@@ -21,8 +21,13 @@ function BusinessInfo({ business }) {
           <h2 className="text-primary px-3 py-1 text-lg bg-purple-100 rounded-full">
             {business?.category?.name}
           </h2>
+          
 
           <h2 className="text-[40px] font-bold">{business.name}</h2>
+
+          <h2 className="flex gap-2 text-lg text-primary">
+            <User /> {business.contactPerson}
+          </h2>
 
           <h2 className="flex gap-2 text-lg text-gray-500">
             <MapPin /> {business.address}
@@ -33,7 +38,7 @@ function BusinessInfo({ business }) {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-5 items-end">
+        {/* <div className="flex flex-col gap-5 items-end">
           <Button>
             <Share />
           </Button>
@@ -43,9 +48,9 @@ function BusinessInfo({ business }) {
           </h2>
 
           <h2 className="flex gap-2 text-xl text-gray-500">
-            <Clock /> Available 8:00 AM to 10:00 PM
-          </h2>
-        </div>
+            <Clock /> Available 8:00 AM to 10:00 PM */}
+          {/* </h2>
+        </div> */}
       </div>
     </div>
   );

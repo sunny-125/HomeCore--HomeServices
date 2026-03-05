@@ -2,7 +2,7 @@
 
 import GlobalApi from "@/app/_services/GlobalApi";
 import { Button } from "@/components/ui/button";
-import { NotebookPen } from "lucide-react";
+import { Clock, NotebookPen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -26,10 +26,14 @@ function SuggestedBusinessList({ business }) {
 
   return (
     <div className="md:pl-10">
+               <h2 className="text-gray-500 mb-4 flex items-center gap-2">
+            <Clock/> Available 8:00 AM to 10:00 PM 
+           </h2>
       <BookingSection business={business}>
         <Button className="flex gap-2 w-full">
           <NotebookPen /> Book Appointment
         </Button>
+        
       </BookingSection>
 
       <div className="hidden md:block">
